@@ -36,7 +36,7 @@ export default function Navbar() {
               <img src="/icons/hamburger.svg" alt="Hamburger menu" aria-hidden="true" />
             )}
           </button>
-          <Link to="." aria-label="Homepage">
+          <Link to="." aria-label="Homepage" onClick={() => setIsMenuOpen(false)}>
             <img src="/logo.svg" alt="Scoot logo" className="h-[20px] md:h-[28px]" />
           </Link>
           <div className="hidden md:flex flex-1 justify-between items-center leading-6">
