@@ -16,8 +16,10 @@ export default function RootLayout() {
     <>
       <Navbar />
       <Outlet />
-      <SignupBanner />
-      <Footer />
+      <footer>
+        <SignupBanner />
+        <Footer />
+      </footer>
     </>
   )
 }

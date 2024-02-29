@@ -3,7 +3,7 @@ import NavLinks from './NavLinks'
 
 export default function Footer() {
   return (
-    <footer className="bg-navy px-8 pt-16 pb-[5.5rem] md:py-[2.125rem]">
+    <div className="bg-navy px-8 pt-16 pb-[5.5rem] md:py-[2.125rem]">
       <div className="max-w-container mx-auto flex flex-col items-center md:flex-row">
         <Link to="/" aria-label="Homepage">
           <img src="/logo-light.svg" alt="Scoot light logo" className="h-[28px]" />
@@ -29,6 +29,6 @@ export default function Footer() {
           </li>
         </ul>
       </div>
-    </footer>
+    </div>
   )
 }
