@@ -23,12 +23,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](https://i.imgur.com/3VZtjfh.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/scoot-multipage-website-using-react-typescript-and-tailwind-ZVBiQHfBR7](https://www.frontendmentor.io/solutions/scoot-multipage-website-using-react-typescript-and-tailwind-ZVBiQHfBR7)
+- Live Site URL: [https://scoot-react.vercel.app/](https://scoot-react.vercel.app/)
 
 ## My process
 
