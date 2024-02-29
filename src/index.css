@@ -1,0 +1,183 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  min-height: 100dvh;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: inherit;
+}
+
+main {
+  flex: 1;
+}
+
+.homepage-hero {
+  background: url('/patterns/right-arrow.svg') no-repeat, url('/images/home-hero-mobile.jpg') no-repeat;
+  background-size: 446px, cover;
+  background-position: bottom 34px left -312px, center;
+}
+
+.feature-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.feature-section::before {
+  content: '';
+  position: absolute;
+  width: 735px;
+  height: 138px;
+  background: url('/patterns/left-downward-arrow.svg');
+  background-size: contain;
+  right: -392px;
+  bottom: 0;
+}
+
+.pattern-bottom-left-down::before,
+.pattern-bottom-left-up::before {
+  right: -420px;
+}
+
+.pattern-bottom-left-down::before {
+  background-image: url('/patterns/left-downward-arrow.svg');
+  bottom: 0;
+}
+
+.pattern-bottom-left-up::before {
+  background-image: url('/patterns/left-upward-arrow.svg');
+  bottom: 2rem;
+}
+
+.pattern-top-right-down::before {
+  background-image: url('/patterns/right-downward-arrow.svg');
+  left: -100%;
+  background-position: right 200px top;
+}
+
+.pattern-top-left-down::before {
+  background-image: url('/patterns/left-downward-arrow.svg');
+  right: -490px;
+  top: 0;
+}
+
+.about-hero {
+  background-image: url('/images/about-hero-mobile.jpg');
+}
+
+.careers-hero,
+.locations-hero {
+  background-image: url('/images/careers-location-hero-mobile.jpg');
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.location-item::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 100%);
+  display: none;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid #fcb72b;
+}
+
+@media (min-width: 768px) {
+  .homepage-hero {
+    background: url('/patterns/right-arrow.svg') no-repeat, url('/patterns/white-circles.svg') no-repeat,
+      url('/images/home-hero-tablet.jpg') no-repeat;
+    background-size: 446px, auto, cover;
+    background-position: bottom 40px left -127px, right -32px bottom 40px, center;
+  }
+
+  .no-scroll {
+    overflow: auto;
+  }
+
+  .pattern-bottom-left-down::before,
+  .pattern-bottom-left-up::before {
+    right: -380px;
+  }
+
+  .pattern-top-right-down::before {
+    background-position: right 100px top;
+  }
+
+  .pattern-top-left-down::before {
+    right: -540px;
+  }
+
+  .about-hero {
+    background-image: url('/images/about-hero-tablet.jpg');
+  }
+
+  .careers-hero,
+  .locations-hero {
+    background-image: url('/images/careers-location-hero-tablet.jpg');
+  }
+
+  .location-item::after {
+    display: block;
+  }
+}
+
+@media (min-width: 1280px) {
+  .homepage-hero {
+    background: url('/patterns/white-circles.svg') no-repeat right -48px bottom 165px, url('/images/home-hero-desktop.jpg') no-repeat left;
+    background-size: auto, cover;
+  }
+
+  .pattern-bottom-left-down::before,
+  .pattern-bottom-left-up::before {
+    right: -165px;
+  }
+
+  .pattern-top-right-down::before {
+    background-position: right 100px top;
+  }
+
+  .pattern-top-left-down::before {
+    right: -540px;
+    top: 77px;
+  }
+
+  .about-hero {
+    background-image: url('/images/about-hero-desktop.jpg');
+  }
+
+  .careers-hero,
+  .locations-hero {
+    background-image: url('/images/careers-location-hero-desktop.jpg');
+  }
+
+  .location-item::after {
+    border-left-width: 16px;
+    border-right-width: 16px;
+    border-top-width: 16px;
+  }
+}
+
+@media (min-width: 1441px) {
+  .pattern-bottom-left-down::before,
+  .pattern-bottom-left-up::before {
+    right: -460px;
+  }
+
+  .pattern-top-right-down::before {
+    background-position: right 100px top;
+    left: -500px;
+  }
+
+  .pattern-top-left-down::before {
+    right: -540px;
+    top: 77px;
+  }
+}
