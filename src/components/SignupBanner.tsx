@@ -5,7 +5,7 @@ export default function SignupBanner() {
       id="download"
     >
       <div className="max-w-container mx-auto flex flex-col gap-10 justify-between items-center xl:flex-row">
-        <h2 className="text-center text-h4 leading-h4 tracking-h4 font-mono font-bold md:text-h2 md:leading-h2 md:tracking-h2 md:max-w-[460px] xl:text-left">
+        <h2 className="text-center text-h4 leading-h4 tracking-h4 font-mono font-bold md:text-h2 md:leading-h2 md:tracking-h2 md:max-w-[445px] xl:text-left">
           Sign up and Scoot off today
         </h2>
         <div className="flex justify-center items-center gap-3 xl:gap-[1.125rem]">
