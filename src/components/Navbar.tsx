@@ -57,7 +57,7 @@ export default function Navbar() {
             <ul className="flex flex-col gap-6">
               <NavLinks onClick={() => setIsMenuOpen(false)} />
             </ul>
-            <Button to="#download" text="Get Scootin" isNative />
+            <Button to="#download" text="Get Scootin" isNative onClick={() => setIsMenuOpen(false)} />
           </div>
         </Transition.Child>
       </Transition>
